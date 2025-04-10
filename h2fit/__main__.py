@@ -24,7 +24,7 @@ def calcular_vsaida(I, T, params):
     perda_ohmica = Rint * I
     perda_concentracao = m * np.exp(n * I)
 
-    v_saida = N * (v_nernst + perda_ativacao - perda_ohmica - perda_concentracao)
+    v_saida = N * (v_nernst - perda_ativacao - perda_ohmica - perda_concentracao)
     return v_saida
 
 # ============================

@@ -1,0 +1,15 @@
+site_name: h2fit
+repo_url:  https://github.com/MateusKaiss/h2fit
+repo_name: MateusKaiss/h2fit
+edit_uri:  tree/master/docs
+
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/logo.png
+
+markdown_extensions:
+  -  attr_list
+
+extra_css:
+  -  stylesheet/extra.css

@@ -19,8 +19,7 @@ N = 60
 def calcular_vsaida(I, T, params):
     x1, x2, x3, x4, Rint, m, n = params
 
-    u1 = 8.314 / (2 * 96485)
-    v_nernst = 1.229 - 0.85e-3 * (T - 298.15) + 4.3085e-5 * u1 * (np.log(pH2) + 0.5 * np.log(pO2))
+    v_nernst = 1.229 - 0.85e-3 * (T - 298.15) + 4.3085e-5 * T * (np.log(pH2) + 0.5 * np.log(pO2))
     perda_ativacao = -(x1 + x2 * T + x3 * T * np.log(pO2 / (5.08e6 * np.exp(-498 / T))) + x4 * T * np.log(I + 1e-6))
     perda_ohmica = Rint * I
     perda_concentracao = m * np.exp(n * I)

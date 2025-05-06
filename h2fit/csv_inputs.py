@@ -6,7 +6,7 @@ import pandas as pd
 # ============================
 # Leitura dos arquivos CSV
 # ============================
-df_entradas = pd.read_csv(r"C:\Users\franc\Downloads\lucas\entradas.csv")
+df_entradas = pd.read_csv(r"C:\Users\franc\Downloads\lucas\entradas_teste.csv")
 df_limites = pd.read_csv(r"C:\Users\franc\Downloads\lucas\limites.csv")
 
 corrente = df_entradas['corrente'].values
